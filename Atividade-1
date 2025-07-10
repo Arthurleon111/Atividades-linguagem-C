@@ -1,9 +1,7 @@
 Letra A
 
-// Example program
 #include <stdio.h>
-#include <string>
-using namespace std;
+
 
 int main()
 {
@@ -15,6 +13,7 @@ int main()
     printf("*        *       *     *         *              * *\n");
     printf("**********         ***           *               *\n");
 
+return 0;
 }
 
 Letra C
