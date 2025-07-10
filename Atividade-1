@@ -17,5 +17,110 @@ int main()
 
 }
 
-Letra B
+Letra C
 
+
+#include <stdio.h>
+
+int main()
+{
+     int n1;
+     int n2;
+     
+     printf("Digite o primeiro numero: ");
+     scanf("%d", &n1);
+     
+     printf("Digite o segundo numero: ");
+     scanf("%d", &n2);
+     
+     
+     int soma = n1 + n2;
+     int subtracacao = n1 - n2;
+     float divisao = n1/n2;
+     float resto = n1 % n2;
+     int multiplicacao = n1* n2;
+     
+     
+     printf("A soma entre esses numeros e: %d\n", soma);
+     printf("A subtracacao entre esses numeros e: %d\n", subtracacao);
+     printf("A divisao entre esses numeros e: %.2f\n", divisao);
+     printf("A resto entre esses numeros e: %.2f\n", resto);
+     printf("A multiplicacao entre esses numeros e: %d\n", multiplicacao);
+     
+     return 0;
+}
+
+Letra D 
+
+
+#include <stdio.h>
+
+int main()
+{
+    float c;
+    
+    printf("Digite a temperatura em celsius: \n");
+    scanf("%f",&c);
+    
+    float f = (9*c + 160)/5;
+    
+    printf("A temperatura em Fahrenheit e: %.2f\n",f);
+    
+    
+    
+    
+    return 0;
+}
+
+Letra E
+
+
+#include <stdio.h>
+
+int main()
+{
+    float f;
+    
+    printf("Digite a temperatura em Fahrenheit \n");
+    scanf("%f",&f);
+    
+    float c = ((f-32)*5) /9;
+    
+    printf("A temperatura em Celsuis e: %.2f\n",c);
+    
+    
+    
+    
+    return 0;
+}
+
+Letra F
+
+
+#include <stdio.h>
+
+int main()
+{
+    float raio;
+    float altura;
+   
+    
+    printf("Qual a altura da embalagem: \n");
+    scanf("%f", &altura);
+    
+    printf("Qual o raio da embalagem: \n");
+    scanf("%f", &raio);
+    
+    float volume = 3.14159 * raio * altura;
+    
+    printf("O volume da embalagem e (em litros): %.2f\n", volume);
+    
+    float ml = volume*1000;
+    
+    
+    printf("O volume em litros e: %.2f\n", ml);
+    
+    
+    
+    return 0;
+}
