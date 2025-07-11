@@ -1,0 +1,106 @@
+Questao 3
+
+#include <stdio.h>
+
+
+
+int main() {
+	float n1, n2, n3, n4, media ;
+	
+	printf("Qual a sua primeira nota: ");
+	scanf("%f", &n1);
+	
+	printf("Qual a sua segunda nota: ");
+	scanf("%f", &n2);
+	
+	printf("Qual a sua terceira nota: ");
+	scanf("%f", &n3);
+	
+	printf("Qual a sua quarta nota: ");
+	scanf("%f", &n4);
+	
+	media = (n1 + n2 + n3 + n4 )/4;
+	
+  printf("A sua media e: %2.f", media);
+
+}
+
+Questao 4
+
+
+#include <stdio.h>
+
+int main() {
+	float  m1, m2, m3, media;
+	
+	printf("Valor gasto no primeiro mes: ");
+	scanf("%f",&m1);
+	
+	printf("Valor gasto no segundo mes: ");
+	scanf("%f",&m2);
+	
+	printf("Valor gasto no terceiro mes: ");
+	scanf("%f",&m3);
+	
+	media = (m1 + m2 + m3)/3;
+	
+	printf("A media de gastos em gasolina nos 3 meses foi:  %.2f", media);
+	
+	
+}
+
+Questao 5
+
+#include <stdio.h>
+
+int main() {
+	float altura, peso_ideal;
+	
+	const float  k = 72.5;
+	const float b = 58;
+	
+	printf("Informe sua altura: ");
+	scanf("%f", &altura);
+	
+	peso_ideal =  k*altura-b;
+	
+	printf("O peso ideal para a altura %.2fm e: %.2f", altura,peso_ideal);
+
+}
+
+Questao 7
+
+#include <stdio.h>
+
+int main() {
+    float raio, diametro, comprimento, area;
+    const float pi = 3.14;
+
+    printf("Digite o valor do raio da circunferência: ");
+    scanf("%f", &raio);
+
+    diametro = 2 * raio;
+    comprimento = 2 * pi * raio;
+    area = pi * raio * raio;
+
+    printf("O diametro e: %.2f\n", diametro);
+    printf("O comprimento e: %.2f\n", comprimento);
+    printf("A area : %.2f\n", area);
+}
+
+Questao 8
+
+#include <stdio.h>
+
+int main() {
+	float grau_celsius, fahrenheit;
+	
+	printf("Temperatura em graus celsius: \n");
+	scanf("%f", &grau_celsius);
+	
+	fahrenheit = (grau_celsius*(9/5)) + 32;
+	
+	printf("Temperatura em  celsius:  %.2f\n",grau_celsius);
+    printf("\nTemperatura transformada em fahrenheit: %.2f\n",fahrenheit);
+
+}
