@@ -37,9 +37,9 @@ Questao 3
 #include <stdio.h>
 
 int main() {
-    short idade;
+    int short idade;
     int montante;
-    long conta;
+    int long conta;
 
     printf("Digite sua idade: ");
     scanf("%hd", &idade);
