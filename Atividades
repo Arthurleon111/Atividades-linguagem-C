@@ -25,18 +25,10 @@ QUESTAO 2
 #include <stdio.h>
 
 int main() {
-    int i, cubo, quadrado;
-
-    printf("Digite um numero: ");
-    scanf("%d", &i);
-    
-    quadrado = i * i;
-    cubo = i * i * i;
-    
-    printf("Ao quadrado: %d\n", quadrado);
-    printf("Ao cubo: %d\n", cubo);
-
-    return 0;
+    printf("Numero\quadrado   cubo\n");
+    for(int i=0; i<=10; i++){
+        printf("%d\t%d\t%d\n", i,i*i,i*i*i);
+    }
 }
 
 
