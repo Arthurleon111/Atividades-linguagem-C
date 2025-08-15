@@ -1,0 +1,120 @@
+QUESTAO 1
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+    int n1, n2, n3, n4, n5;
+
+    printf("Digite um numero de 5 digitos: ");
+    scanf("%d", &numero);
+
+    n1 = numero / 10000;
+    n2 = (numero / 1000) % 10;
+    n3 = (numero / 100) % 10;
+    n4 = (numero / 10) % 10;
+    n5 = numero % 10;
+
+    printf("%d   %d   %d   %d   %d\n", n1, n2, n3, n4, n5);
+
+    return 0;
+}
+
+QUESTAO 2
+
+#include <stdio.h>
+
+int main() {
+    int i, cubo, quadrado;
+
+    printf("Digite um numero: ");
+    scanf("%d", &i);
+    
+    quadrado = i * i;
+    cubo = i * i * i;
+    
+    printf("Ao quadrado: %d\n", quadrado);
+    printf("Ao cubo: %d\n", cubo);
+
+    return 0;
+}
+
+
+Questao 3
+
+#include <stdio.h>
+
+int main() {
+    short idade;
+    int montante;
+    long conta;
+
+    printf("Digite sua idade: ");
+    scanf("%hd", &idade);
+
+    printf("Digite o montante a depositar: ");
+    scanf("%d", &montante);
+
+    printf("Digite o numero da conta: ");
+    scanf("%ld", &conta);
+
+    printf("Idade: %hd anos\n", idade);
+    printf("Montante: R$ %d\n", montante);
+    printf("Conta: %ld\n", conta);
+
+    return 0;
+}
+
+Questao 4
+
+#include <stdio.h>
+
+int main() {
+    int opcao;
+    float num1, num2;
+
+    printf("Escolha uma operacao:\n");
+    printf("1 - Adicao\n");
+    printf("2 - Subtracao\n");
+    printf("3 - Multiplicacao\n");
+    printf("4 - Divisao\n");
+    printf("Opcao: ");
+    scanf("%d", &opcao);
+
+    printf("Digite o primeiro numero: ");
+    scanf("%f", &num1);
+    printf("Digite o segundo numero: ");
+    scanf("%f", &num2);
+
+    if (opcao == 1) {
+        printf("Resultado: %.2f\n", num1 + num2);
+    } else if (opcao == 2) {
+        printf("Resultado: %.2f\n", num1 - num2);
+    } else if (opcao == 3) {
+        printf("Resultado: %.2f\n", num1 * num2);
+    } else if (opcao == 4) {
+    printf("Resultado: %.2f\n", num1 / num2);
+        
+    }
+
+}
+
+Questao 5
+
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+
+    if ((num % 2 == 0 && num % 3 != 0) || (num % 3 == 0 && num % 2 != 0)) {
+        printf("O numero %d e divisivel por 2 ou por 3, mas nao pelos dois.\n", num);
+    } else {
+        printf("O numero %d é divisivel por 2 e por 3.\n", num);
+    }
+
+    return 0;
+}
+
